@@ -78,7 +78,6 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         label="Description"
         value={description}
         onChange={handleChange('description')}
-        required
       />
 
       <TextField
@@ -104,7 +103,6 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
         label="Imdb ID"
         value={imdbId}
         onChange={handleChange('imdbId')}
-        validate={validateUrl}
         required
       />
 
